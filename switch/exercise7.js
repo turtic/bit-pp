@@ -1,39 +1,60 @@
-var day = 2;
-var month = 23;
-var year = 1989;
+var day = 29;
+var month = 2;
+var year = 1983;
 
-if (a > 0 && a < 32 && typeof day === "number" && month > 0 && month < 13 && typeof month === "number" && year === "number") {
+var leap = false;
 
-    if (month === 2 && day < ) { }
+if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0)) { leap = true; };
+
+if (day > 0 && day < 32 && month > 0 && month < 13) {
 
     switch (month) {
 
         case 2:
 
-            if (date === 31 || date === 30 )  { console.log("Date is not valid"); } else if (date===29 && year === "nije prestupna")
-
+            if (day === 31 || day === 30) {
+                console.log("Date is not valid");
+            } else if (day === 29 && !leap) {
+                console.log("Only leap years can have 29 days");
+            } else {
+                console.log("Date is valid");
+            }
             break;
 
         case 4:
-            if (date === 31) { console.log("Date is not valid"); }
+            if (day === 31) {
+                console.log("Date is not valid");
+            } else {
+                console.log("Date is valid");
+            }
             break;
 
         case 6:
-            if (date === 31) { console.log("Date is not valid"); }
+            if (day === 31) {
+                console.log("Date is not valid");
+            } else {
+                console.log("Date is valid");
+            }
             break;
 
         case 9:
-            if (date === 31) { console.log("Date is not valid"); }
+            if (day === 31) {
+                console.log("Date is not valid");
+            } else {
+                console.log("Date is valid");
+            }
             break;
 
         case 11:
-            if (date === 31) { console.log("Date is not valid"); }
+            if (day === 31) {
+                console.log("Date is not valid");
+            } else {
+                console.log("Date is valid");
+            }
             break;
 
-
-
         default:
-            console.log("Input must be a number between 1 and 12")
+            console.log("Date is valid")
     }
 
 

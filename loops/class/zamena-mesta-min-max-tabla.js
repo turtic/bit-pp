@@ -9,7 +9,7 @@ var counter;
 
 var position;
 
-var temp;
+var temp=[];
 
 for (i = 1; i < a.length; i++) {
 
@@ -33,6 +33,7 @@ for (i = 1; i < a.length; i++) {
 
 console.log("Min is " + min + " is on the position " + position);
 
-temp=max;
-max=min;
-min=max;
+a[counter-1]=min;
+a[position-1]=max;
+
+console.log("When min and max switch places we get:\n" + a);

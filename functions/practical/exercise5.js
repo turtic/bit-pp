@@ -1,11 +1,11 @@
 
-function firstOccurrence(s,l) {
+function firstOccurrence(s, l) {
 
-   var position;
-    
+    var position = -1;
+
     for (i = 0; i < s.length; i++) {
 
-        if(s[i] === l) {
+        if (s[i] === l) {
 
             position = i + 1;
 

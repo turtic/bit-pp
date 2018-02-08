@@ -1,20 +1,25 @@
 
-function filterNonNumeric (a) {
+function filterOutNonNumeric(a) {
 
-var array13 =[];
+    var array13 = [];
+    var j = 0;
+
     for (i = 0; i < a.length; i++) {
 
-    if ( typeof parseInt(a[i]) === 'number' ) {
+        if (parseFloat(a[i]) + "" === "NaN" || parseFloat(a[i]) === Infinity ) {
+            continue;
+        } else {
 
-        array13[i] =
+            array13[j] = parseFloat(a[i]);
+            j = j + 1;
+
+        }
 
     }
 
-    }
-
-    return dots;
+    return array13;
 
 }
 
 
-console.log(filterNonNumeric(["1", "21", undefined, "42", "1e+3", Infinity]));
+console.log(filterOutNonNumeric(["1", "21", undefined, "42", "1e+3", Infinity]));

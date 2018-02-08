@@ -1,7 +1,7 @@
 
 function lastOccurrence(s,l) {
 
-   var position;
+    var position = -1;
     
     for (i = 0; i < s.length; i++) {
 

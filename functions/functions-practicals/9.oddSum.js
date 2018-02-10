@@ -16,4 +16,4 @@ function oddSum(a) {
     return sum;
 }
 
-console.log(oddSum([1, 2, 3, 4, 6, 8, 7]));
+console.log(oddSum([1, 2, 3, 4, 6, 8, 7, 0]));

@@ -1,12 +1,12 @@
+// Write a function to humanize a number (formats a number to a human-readable string) with the correct suffix such as 1st, 2nd, 3rd or 4th.
 
-function stNdRdTh(x) {
+function streetNumber(x) {
 
     if (x % 100 >= 11 && x % 100 <= 13) {
 
         return x + 'th';
 
     } 
-    
     
     if (x % 10 == 1) {
 
@@ -28,7 +28,7 @@ function stNdRdTh(x) {
 
 }
 
-console.log(stNdRdTh(2));
-console.log(stNdRdTh(11));
-console.log(stNdRdTh(5551));
-console.log(stNdRdTh(53506));
+console.log(streetNumber(2));
+console.log(streetNumber(11));
+console.log(streetNumber(5551));
+console.log(streetNumber(53506));

@@ -2,9 +2,9 @@
 
 
 
-function arithmeticMean(a, b, c, d) {
+function fourNumArithMean(a, b, c, d) {
 
     return (a + b + c + d) / 4
 }
 
-console.log(arithmeticMean(1, 2, 3, 4));
+console.log(fourNumArithMean(1, 2, 3, 4));

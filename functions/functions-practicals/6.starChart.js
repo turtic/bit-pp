@@ -3,7 +3,7 @@
 
 
 
-function arithmeticMean(a, b, c) {
+function starChart(a, b, c) {
 
     var firstRow = "";
     var midRow = "";
@@ -24,4 +24,4 @@ function arithmeticMean(a, b, c) {
     return firstRow + '\n' + midRow + '\n' + lastRow;
 }
 
-console.log(arithmeticMean(5, 6, 2));
+console.log(starChart(5, 6, 2));

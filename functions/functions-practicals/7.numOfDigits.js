@@ -2,7 +2,7 @@
 
 
 
-function numberOfDigits(n) {
+function numOfDigits(n) {
 
     var n = n + "";
     
@@ -10,4 +10,4 @@ function numberOfDigits(n) {
 
 }
 
-console.log(numberOfDigits(12234));
+console.log(numOfDigits(123456789));

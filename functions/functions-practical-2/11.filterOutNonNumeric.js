@@ -1,3 +1,4 @@
+// Write a function that converts an array of strings into an array of numbers. Filter out all non-numeric values.
 
 function filterOutNonNumeric(a) {
 
@@ -6,7 +7,7 @@ function filterOutNonNumeric(a) {
 
     for (i = 0; i < a.length; i++) {
 
-        if (parseFloat(a[i]) + "" === "NaN" || parseFloat(a[i]) === Infinity ) {
+        if (parseFloat(a[i]) + "" === "NaN" || parseFloat(a[i]) === Infinity) {
             continue;
         } else {
 

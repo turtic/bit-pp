@@ -1,3 +1,5 @@
+// Write a function to check whether a string is blank or not.
+
 function blankOrNot(a) {
 
     if (a === " ") { 

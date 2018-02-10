@@ -2,12 +2,12 @@
 // Input array: [4, 2, 2, -1, 6]
 // Output: 2
 
-function elementMulty(a) {
+function secondLargest(a) {
 
     var min = a[0];
     var max = a[0];
     var index;
-    var min2=a[0];
+    var min2 = a[0];
     var i;
     var k;
     var j;
@@ -42,4 +42,4 @@ function elementMulty(a) {
     return min2;
 }
 
-console.log(elementMulty([4, 2, 2, -1, 6, 1]));
+console.log(secondLargest([4, 2, 2, -1, 6]));

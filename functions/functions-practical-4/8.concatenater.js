@@ -8,15 +8,10 @@ function concatenater(a, b) {
     var j;
     var c = [];
     var k;
-    var p;
 
     for (i = 0, k = 0; i < a.length; i++ , k++) {
         c[k] = a[i];
     }
-
-    // for (j = 0, p = a.length; j < b.length; j++, p++) {
-    //     c[p] = b[j];
-    // }
 
     for (j = 0; j < b.length; j++ , k++) {
         c[k] = b[j];

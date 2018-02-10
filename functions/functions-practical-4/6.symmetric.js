@@ -12,7 +12,7 @@ function symmetric(a) {
     var j;
 
     for (i = 0, j = 6; i < a.length; i++ , j--) {
-    
+
         if (a[i] !== a[j]) {
 
             return 'The array isn’t symmetric'

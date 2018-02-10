@@ -1,11 +1,8 @@
-// // poredjenje
-
-// var a=[4, 6, 11, 18, 32];
-
-// var b=[-1, 7, 13, 15];
+// // merge alternately
 
 
-function merge(a, b) {
+
+function mixItUp(a, b) {
 
     var i;
     var j;
@@ -29,9 +26,9 @@ function merge(a, b) {
 
         return c;
 
-    } else { 
-        return 'not same length' 
+    } else {
+        return 'not same length'
     }
 
 }
-console.log(merge([4, 6, 11, 18], [-1, 7, 13, 15]));
+console.log(mixItUp([4, 6, 11, 18], [-1, 7, 13, 15]));

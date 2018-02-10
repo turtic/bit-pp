@@ -8,21 +8,21 @@
 
 function symmetric(a) {
 
-    for (i = 0; j = a.length - 1; i < a.length && j >= 0; i++; j--) {
+    var i;
+    var j;
 
+    for (i = 0, j = 6; i < a.length; i++ , j--) {
+    
         if (a[i] !== a[j]) {
-                    return 'The array isn’t symmetric'
-                }
 
-        // for (j = a.length - 1; j >= 0; j--) {
-        //     if (a[i] !== a[j]) {
-        //         return 'The array isn’t symmetric'
-        //     }
-        // }
+            return 'The array isn’t symmetric'
+        }
     }
 
     return 'The array is symmetric.';
 
 }
 
-console.log(symmetric([2, 4, -2, 7, -2, 4, 2]))
+console.log(symmetric([2, 4, -2, 7, -2, 4, 2]));
+
+console.log(symmetric([3, 4, 12, 8]))

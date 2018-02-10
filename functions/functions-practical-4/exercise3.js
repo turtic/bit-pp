@@ -18,7 +18,7 @@ var index;
         }
 
     }
-    return min + ' ' + index;
+    return 'minimum is: ' + min + '\n' + 'index of minimum is: ' + index
 }
 
 console.log(minAndIndex([4, 2, 2, -1, 6]));

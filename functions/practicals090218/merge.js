@@ -1,4 +1,4 @@
-// // poredjenje
+// // merge
 
 // var a=[4, 6, 11, 18, 32];
 

@@ -1,10 +1,14 @@
 // Write a function to find all the numbers greater than the average.
 
-lrgrThenAvrg = function (a) {
+'use strict'
+
+
+var lrgrThenAvrg = function (a) {
     var larger = [];
     var k = 0;
     var i;
     var sum = 0;
+    var average;
 
     for (i = 0; i < a.length; i++) {
         sum = sum + a[i];

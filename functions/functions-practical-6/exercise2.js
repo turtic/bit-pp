@@ -5,6 +5,9 @@
 
 
 //function intertwiner(x, y) {
+
+'use strict'
+
 var intertwiner = function (x, y) {
 
     var i;

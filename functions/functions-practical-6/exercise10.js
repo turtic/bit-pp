@@ -2,7 +2,10 @@
 
 // Input: [1,2,3,4,5,6,6]  Output: 6
 
-mostFrequent = function (a) {
+'use strict'
+
+
+var mostFrequent = function (a) {
 
     var counter = [];
     var i;

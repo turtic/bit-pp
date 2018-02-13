@@ -2,9 +2,13 @@
 
 // For example [1,2,3,4,5,6] rotated by two becomes [3,4,5,6,1,2]
 
+'use strict'
+
 function rotatoPotato(a, b) {
-    z = [];
-    k = 0;
+    var z = [];
+    var k = 0;
+    var i;
+    var j;
 
     for (i = 0; i < b; i++) {
         z[i + a.length - b] = a[i];

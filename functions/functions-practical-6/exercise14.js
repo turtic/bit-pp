@@ -8,8 +8,9 @@
 // Obese: greater than or equal to 30 but less than 40
 // Morbidly obese: greater than or equal to 40
 
+'use strict'
 
-bodyMass = function (weight, height) {
+var bodyMass = function (weight, height) {
 
     var bmi = weight/Math.pow(height, 2);
     var text;

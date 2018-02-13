@@ -4,7 +4,9 @@
 // Input: [1,2,3,4,5,6]  Output: [1,6]
 // Input: [1,2,3,4,5,6,7]  Output: [1,4,7]
 
-firstMiddleLast = function (a) {
+'use strict'
+
+var firstMiddleLast = function (a) {
     var medianIndex;
     if (a.length % 2 == 1) {
 

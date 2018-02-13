@@ -1,7 +1,10 @@
 // Write a function to find the median element of array.
 // Input: [1,2,3,4,5,6]  Output: 3.5
 
-medianElement = function (a) {
+'use strict'
+
+
+var medianElement = function (a) {
     var medianIndex;
     if (a.length % 2 == 1) {
 

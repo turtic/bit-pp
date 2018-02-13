@@ -1,7 +1,10 @@
 // Write a function to find the maximum and minimum elements. Function returns an array.
 // Input: [1,2,3,4,5]  Output: array: [1, 5]
 
-minAndMax = function (a) {
+'use strict'
+
+
+var minAndMax = function (a) {
     var r = [];
     var i;
     var j;

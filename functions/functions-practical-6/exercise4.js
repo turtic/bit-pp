@@ -2,9 +2,13 @@
 
 // input: 321; output: [3,2,1]
 
+'use strict'
+
 var arrayOfDigits = function (x) {
     var k=0;
     var z = [];
+    var i;
+
     x = x + '';
     for (i = 0; i < x.length; i++) {
         z[k] = parseInt(x[i]);

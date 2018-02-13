@@ -2,9 +2,14 @@
 
 // Input: [1,2,3,4,5,6]  Output: 11.5
 
+'use strict'
 
-average = function (a) {
+
+
+var average = function (a) {
     var sum = 0;
+    var i;
+    
     for (i = 0; i < a.length; i++) {
         sum = sum + a[i];
     }

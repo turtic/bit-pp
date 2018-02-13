@@ -12,12 +12,15 @@
 
 // console.log(CelsiusToFahrenheit(0));
 
+'use strict'
+
+
 var fahrenheit = function (celsius) {
     var celsius;
 
-    fahrenheit = celsius * 1.8 + 32;
+    var f = celsius * 1.8 + 32;
 
-    return fahrenheit;
+    return f;
 }
 
 

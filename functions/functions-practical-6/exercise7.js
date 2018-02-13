@@ -1,6 +1,9 @@
 // Write a function to find the maximum element in array of numbers. Filter out all non-number elements.
 // Input: [1,2,3,4,5, "apple", "orange", NaN]  Output: array: [1, 2, 3 ,4 ,5] max=5
 
+'use strict'
+
+
 function maxElement(a) {
     var r = [];
     var i;

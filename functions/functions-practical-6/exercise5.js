@@ -1,11 +1,12 @@
 // Write a program that prints a multiplication table for numbers up to 12.
 
+'use strict'
 
 function multipTable(a) {
 
     var i;
     var j;
-    sum = '';
+    var sum = '';
 
     for (i = 0; i < a; i++) {
 

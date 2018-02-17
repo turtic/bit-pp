@@ -1,6 +1,8 @@
 // Write a JavaScript function that reverses a number.
 
-function reverse(x) {
+'use strict';
+
+function reverseNumber(x) {
  
   var str = x + ""; ;
 
@@ -15,4 +17,4 @@ function reverse(x) {
 }
 
 
-console.log(reverse(123456));
+console.log(reverseNumber(123456));

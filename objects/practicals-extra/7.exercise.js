@@ -77,6 +77,21 @@ function yearInterval(n) {
 // Write a function named validator that returns an object with properties stringValidator, 
 // passwordValidator, colorValidator, and yearValidator referencing the functions from a) to d).
 
+function validator1() {
+
+  return {
+    stringValidator: isItAllCap,
+    passwordValidator: areThereNum,
+    colorValidator: trueColor,
+    yearValidator: yearInterval
+  };
+
+}
+
+var someNewObj = validator1();
+
+console.log(someNewObj)
+
 function validator() {
 
   this.stringValidator = isItAllCap;
@@ -90,17 +105,17 @@ var checker = new validator();
 
 console.log(checker);
 
-console.log(checker.stringValidator('AAAA'));
-console.log(checker.stringValidator('AaAA'));
+// console.log(checker.stringValidator('AAAA'));
+// console.log(checker.stringValidator('AaAA'));
 
-console.log(checker.passwordValidator('AAAA'));
-console.log(checker.passwordValidator('AAAA1'));
+// console.log(checker.passwordValidator('AAAA'));
+// console.log(checker.passwordValidator('AAAA1'));
 
-console.log(checker.colorValidator('#ffffff'));
-console.log(checker.colorValidator('#000000'));
-console.log(checker.colorValidator('ffafffasda'));
+// console.log(checker.colorValidator('#ffffff'));
+// console.log(checker.colorValidator('#000000'));
+// console.log(checker.colorValidator('ffafffasda'));
 
-console.log(checker.yearValidator('1234'));
-console.log(checker.yearValidator('134342'));
-console.log(checker.yearValidator('2000'));
+// console.log(checker.yearValidator('1234'));
+// console.log(checker.yearValidator('134342'));
+// console.log(checker.yearValidator('2000'));
 

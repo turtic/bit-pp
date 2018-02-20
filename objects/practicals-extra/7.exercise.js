@@ -47,6 +47,7 @@ function trueColor(s) {
 
   }
 
+  //todo
   var x = parseInt(s, 16);
 
   if (!isNaN(x) && s.length == 6) {

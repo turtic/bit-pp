@@ -53,7 +53,7 @@ function departureCalc(departure, arrival) {
 
   // console.log(time)
   // console.log(timeDate)
-  console.log(timeDate.getHours() - 1)
+  console.log(timeDate.getUTCHours())
   console.log(timeDate.getMinutes())
   console.log(timeDate.getSeconds())
 

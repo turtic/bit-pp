@@ -47,7 +47,16 @@ function trueColor(s) {
 
   }
 
-  //todo
+  if (s.length == 3) {
+    var z = '';
+    for (var i = 0; i < s.length; i++) {
+      z = z + s[i] + s[i];
+    }
+
+    s = z;
+
+  }
+
   var x = parseInt(s, 16);
 
   if (!isNaN(x) && s.length == 6) {
@@ -60,6 +69,7 @@ function trueColor(s) {
   }
 
 }
+
 
 function yearInterval(n) {
 
@@ -112,9 +122,9 @@ console.log(checker);
 // console.log(checker.passwordValidator('AAAA'));
 // console.log(checker.passwordValidator('AAAA1'));
 
-// console.log(checker.colorValidator('#ffffff'));
-// console.log(checker.colorValidator('#000000'));
-// console.log(checker.colorValidator('ffafffasda'));
+console.log(checker.colorValidator('#fff'));
+console.log(checker.colorValidator('#000000'));
+console.log(checker.colorValidator('ffafffasda'));
 
 // console.log(checker.yearValidator('1234'));
 // console.log(checker.yearValidator('134342'));

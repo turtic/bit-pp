@@ -8,13 +8,11 @@ function shuffle(a) {
 
     }
 
-    randNum(0, a.length - 1)
-
     var z = [];
 
     for (var i = 0; i < a.length; i++) {
 
-        var index = randNum(0, a.length - 1)
+        var index = randNum(0, a.length)
 
         z.push(a[index]);
         a.splice(index, 1);
@@ -68,3 +66,15 @@ return b;
 }
 
 console.log(shuffle222(([1, 2, 3, 4, 5, 6, 7, 8])))
+
+
+
+function shuffle333(a){
+
+    return a.sort(function(){
+        return 0.5 - Math.random()
+    })
+
+}
+
+console.log(shuffle333(([1, 2, 3, 4, 5, 6, 7, 8])))

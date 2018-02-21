@@ -3,12 +3,14 @@
 (function () {
     console.log('Hi! We can do it!')
 
+    var today = new Date()
+
     function Product(name, price, expirationDate) {
         this.name = name;
         this.price = price;
         this.expirationDate = expirationDate;
         this.id = (function () {
-            
+
             return parseInt(((90001) * Math.random()) + 9999);
 
         })();
@@ -54,12 +56,12 @@
             return this.listOfProducts[index].getInfo()
         }
         this.addProduct = function (product) {
-            var today = new Date()
+
             // exp date
             if (today < product.expirationDate) {
                 this.listOfProducts.push(product);
             } else {
-                console.log("Danger! " + product.name + " out of date")
+                console.log("Danger! " + product.name + " is out of date. This product will not be added!")
             }
 
         }
@@ -77,29 +79,41 @@
 
     };
 
-    function PaymentCard(cash, status, valid) {
+    function PaymentCard(cash, validUntil) {
         this.accountBalance = cash;
-        this.status = status;
-        this.validUntil = valid;
+        this.validUntil = validUntil;
+        this.status = (function () {
+
+            if (today < validUntil) {
+                return 'Active'
+            } else {
+                return 'Inactive'
+            }
+
+        })();
     }
 
     var checkoutAndBuy = function (bag, card) {
 
-        console.log(card.accountBalance);
-        console.log(bag.totalPrice());
+        // console.log(card.accountBalance);
+        // console.log(bag.totalPrice());
 
-        if (card.accountBalance - bag.totalPrice() >= 0) {
+        var dif = card.accountBalance - bag.totalPrice();
+
+        // console.log(dif.toPrecision(2));
+
+        if (dif >= 0) {
             return 'Success'
 
 
         } else {
-            return 'Insufficient fonds missing ' + (card.accountBalance - bag.totalPrice)
+            return 'Insufficient fonds, missing ' + dif.toFixed(2) + ' dinars ¯\\_(ツ)_/¯'
         }
 
     }
 
     var myBag = new ShoppingBag();
-    var myCard = new PaymentCard(100000, 'active', new Date(2020, 3, 4));
+    var myCard = new PaymentCard(10, new Date(2020, 3, 4));
 
 
     myBag.addProduct(coffee);
@@ -107,7 +121,7 @@
     myBag.addProduct(bread);
 
 
-
+    console.log(checkoutAndBuy(myBag, myCard))
 
 
 })();

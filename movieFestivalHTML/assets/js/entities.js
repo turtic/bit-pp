@@ -1,6 +1,7 @@
 'use strict';
 
 var movieList = [];
+var programList = [];
 
 function Movie(title, length, genre) {
     this.movieTitle = title;
@@ -16,3 +17,5 @@ Movie.prototype.getGen = function () {
     var a = this.movieGenre[0] + this.movieGenre[this.movieGenre.length - 1];
     return a.toUpperCase(this.movieGenre);
 }
+
+

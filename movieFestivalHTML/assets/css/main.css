@@ -1,4 +1,4 @@
-#create-movie {
+#create-movie, #create-program, #add-movie {
   width: 100%;
   background-color: #4caf4f;
   color: white;
@@ -6,24 +6,11 @@
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 20px; }
+  #create-movie:hover, #create-program:hover, #add-movie:hover {
+    background-color: #2eff34; }
 
-#create-program {
-  width: 100%;
-  background-color: #4caf4f;
-  color: white;
-  padding: 21px;
-  font-size: 25px;
-  font-weight: bold;
-  margin-bottom: 20px; }
-
-#add-movie {
-  width: 100%;
-  background-color: #4caf4f;
-  color: white;
-  padding: 21px;
-  font-size: 25px;
-  font-weight: bold;
-  margin-bottom: 20px; }
+ul {
+  list-style: green; }
 
 .custom-select {
   border: none;
@@ -34,5 +21,8 @@
 
 #total-length {
   float: right; }
+
+li:nth-child(even) {
+  background-color: #f8f8f8; }
 
 /*# sourceMappingURL=main.css.map */

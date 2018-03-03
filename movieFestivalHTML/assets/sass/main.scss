@@ -1,4 +1,4 @@
-#create-movie {
+#create-movie, #create-program, #add-movie {
     width: 100%;
     background-color: #4caf4f;
     color: white;
@@ -6,25 +6,16 @@
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 20px;
+
+    &:hover {
+        background-color: #2eff34;
+    }
 }
-#create-program {
-    width: 100%;
-    background-color: #4caf4f;
-    color: white;
-    padding: 21px;
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 20px;
+
+ul {
+    list-style: green;
 }
-#add-movie {
-    width: 100%;
-    background-color: #4caf4f;
-    color: white;
-    padding: 21px;
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
+
 .custom-select {
     border: none;
     background-color: #f8f8f8;
@@ -38,6 +29,6 @@
     float: right;
 }
 
-// document.querySelector('#genre-select[0]');
-
-// #genre-select:nt
+li:nth-child(even) {
+    background-color: #f8f8f8;
+}

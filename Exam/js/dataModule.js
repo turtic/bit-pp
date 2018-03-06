@@ -15,8 +15,15 @@ var dataModule = (function () {
 
     var passFailed = {
         passed: 0,
-        failed: 0
-    }
+        failed: 0,
+        total: function () {
+            return this.passed + this.failed;
+        },
+        percent: function (x) {
+            var a = x * 100 / this.total();
+            return a.toPrecision(4) + '%';
+        }
+    } 
 
     var Subject = function (name) {
         this.name = name;
@@ -29,11 +36,9 @@ var dataModule = (function () {
         this.name = name;
         this.surname = surname;
         this.getStudentData = function () {
-            return {
-                name: this.name,
-                surname: this.surname
-            }
+            return this.name + ' ' + this.surname;
         }
+
     }
 
     var Exam = function (subject, student, grade) {
@@ -41,10 +46,7 @@ var dataModule = (function () {
         this.student = student;
         this.grade = grade;
         this.getExamInfo = function () {
-            return {
-                subjName: this.subject.getSubjectName(),
-                studentFullName: this.student.getStudentData()
-            }
+            return this.subject.name + ' ' + this.student.getStudentData()
         };
         this.hasPassed = function () {
             if (this.grade > 5) {
@@ -56,6 +58,12 @@ var dataModule = (function () {
     }
 
 
+    return {
+        subject: Subject,
+        student: Student,
+        exam: Exam,
+        passFailed: passFailed
+    }
 
 
 

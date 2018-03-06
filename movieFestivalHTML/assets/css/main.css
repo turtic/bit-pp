@@ -9,9 +9,6 @@
   #create-movie:hover, #create-program:hover, #add-movie:hover {
     background-color: #2eff34; }
 
-ul {
-  list-style: green; }
-
 .custom-select {
   border: none;
   background-color: #f8f8f8; }

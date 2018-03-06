@@ -40,6 +40,12 @@ var UIModule = (function () {
         formData.subject = subjectInput.value;
         formData.student = studentInput.value;
         formData.grade = gradeInput.value;
+        // formData.studentName = function () {
+        //     var res = studentInput.value.split(" ");
+        //     res[0] = res[0].charAt(0).toUpperCase() + res[0].slice(1);
+        //     res[1] = res[1].charAt(0).toUpperCase()+ res[1].slice(1)
+        //     return res;
+        // };
 
         return formData;
     }
@@ -68,6 +74,30 @@ var UIModule = (function () {
         alert(message);
     }
 
+    //change text
+    var changeText = function (selector, text) {
+        return document.querySelector(selector).innerText = text;
+    }
+
+    var changeValue = function (selector, value) {
+        return document.querySelector(selector).value = value;
+    }
+
+    var createAndAppend = function (text, selector) {
+
+        var newEl = document.createElement('p');
+        var newText = document.createTextNode(text);
+        newEl.appendChild(newText);
+        var someList = document.querySelector(selector);
+        someList.appendChild(newEl);
+
+
+    }
+
+    // var res = studentInput.split(" ");
+    // name = res[0];
+    // surname = res[1]
+
 
     return {
         UISelectors: UISelectors,
@@ -75,6 +105,9 @@ var UIModule = (function () {
         getFormData: getFormData,
         validateData: validateData,
         setError: setError,
+        changeText: changeText,
+        changeValue: changeValue,
+        createAndAppend: createAndAppend
 
 
     }

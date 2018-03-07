@@ -4,10 +4,9 @@
 
 
 'use strict'
+const tax = 0.2;
 
 function saleTax(price) {
-
-    const tax = 0.2;
 
     return price * tax;
 }

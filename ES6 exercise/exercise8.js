@@ -3,19 +3,33 @@
 // 	Output: 1, 2, 5
 
 
-
-
 'use strict'
 
 function greaterThanTen(a) {
-   let z = [];
 
-    for (let i = 0; i < a.length; i++) {
-        if (a[i] > 10) {
-            z.push(i)
+    // old school
+
+    //    let z = [];
+
+    //     for (let i = 0; i < a.length; i++) {
+    //         if (a[i] > 10) {
+    //             z.push(i)
+    //         }
+    //     }
+
+    //     return z;
+
+    let z = [];
+
+    a.forEach(function (element) {
+
+        if (element > 10) {
+          z.push( a.indexOf(element)) 
         }
-    }
+
+    });
 
     return z;
+
 }
 console.log(greaterThanTen([1.6, 11.34, 29.23, 7, 3.11, 18]));

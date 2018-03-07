@@ -2,8 +2,6 @@
 // Input: [1.6, 11.34, 9.23, 7, 3.11, 8]
 // 	Output: [7, 8]
 
-
-
 'use strict'
 
 function filterInteger(a) {
@@ -17,4 +15,5 @@ function filterInteger(a) {
     return a;
 
 }
+
 console.log(filterInteger([1.6, 11.34, 9.23, 7, 3.11, 8]));

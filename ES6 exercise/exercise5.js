@@ -2,14 +2,11 @@
 // 	Input: ['compiler', 'transpiler', 'babel.js', 'JS standard', 'linter']
 // 	Output: ['babel.js, 'JS standard']
 
-
-
 'use strict'
 
 function jsJS(a) {
 
     a = a.map(function (item) {
-
         return item.toLowerCase();
     });
 

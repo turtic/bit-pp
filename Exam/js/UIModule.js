@@ -33,6 +33,7 @@ var UIModule = (function () {
         MISSING_SUBJECT: "Please insert subject",
         MISSING_STUDENT: "Please insert student name",
         MISSING_GRADE: "Please insert a grade",
+        INVALID_NAME: "Invalid name",
     };
 
     function getFormData() {
@@ -40,25 +41,9 @@ var UIModule = (function () {
         formData.subject = subjectInput.value;
         formData.student = studentInput.value;
         formData.grade = gradeInput.value;
-        // formData.studentName = function () {
-        //     var res = studentInput.value.split(" ");
-        //     res[0] = res[0].charAt(0).toUpperCase() + res[0].slice(1);
-        //     res[1] = res[1].charAt(0).toUpperCase()+ res[1].slice(1)
-        //     return res;
-        // };
 
         return formData;
     }
-
-    // function results() {
-    //     var examResults = {};
-
-    //     examResults.passCount = passedCounter;
-    //     examResults.failedCount = failedCounter;
-
-    //     return examResults;
-
-    // }
 
     //validation
     function validateData(subject, student, grade) {
@@ -66,12 +51,17 @@ var UIModule = (function () {
             return status.MISSING_DATA;
         }
 
+        if (student.indexOf(' ') == -1) {
+            return status.INVALID_NAME;
+
+        }
+
         return status.OK;
     }
 
     //error display
     function setError(message) {
-        alert(message);
+            alert(message);
     }
 
     //change text
@@ -93,11 +83,6 @@ var UIModule = (function () {
 
 
     }
-
-    // var res = studentInput.split(" ");
-    // name = res[0];
-    // surname = res[1]
-
 
     return {
         UISelectors: UISelectors,
